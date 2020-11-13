@@ -8,6 +8,13 @@
 // - require('express')
 //
 
+// INIT GIT
+// - create remote repository, for example on github (optional)
+// - git init -> initialize repo locally
+// - add .gitignore file that contains "node_modules" -> so we don't commit modules
+// - git add . / add from VSCODE -> stage changes for commit
+// - git commit -m "" / commit from VSCODE -> commit the changes
+
 const express = require("express");
 
 // created our server
