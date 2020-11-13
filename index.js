@@ -23,6 +23,17 @@ const app = express();
 // defined a constant that contains the port we want to run our server on
 const port = 3000;
 
+// HTML string
+const document = `<html>
+  <head>
+    <title>Test page</title>
+  </head>
+
+  <body>
+    <p>Hello class 47!</p>
+  </body>
+</html>`;
+
 // started the server on the 3000 port
 app.listen(port, () => {
   console.log(`Listening on port ${port}...`);
@@ -30,5 +41,5 @@ app.listen(port, () => {
 
 // define an endpoint
 app.get("/", (request, response) => {
-  return response.send("Hello world");
+  return response.send(document);
 });
